@@ -8,6 +8,7 @@ import Contact from "../pages/Contact";
 import Info from "../pages/Info";
 import CourseDetail from "../pages/CourseDetail";
 import ScrollTop from "../components/ScrollTop";
+import NotFound from "../pages/NotFound";
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AppRoutes = () => {
 
           <Route path="/course/:id" element={<CourseDetail />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
